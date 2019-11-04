@@ -1,3 +1,5 @@
+/* ---Header---*/
+/* ---Navigation---*/
 nav {
   width: 100%;
   height: 61px;
@@ -62,7 +64,16 @@ nav {
       text-decoration: none;
       color: #314584; }
 
+.control-buttons {
+  display: none; }
+
 @media (min-width: 768px) {
+  header {
+    margin-bottom: 190px; }
+
+  nav {
+    height: 180px; }
+
   .main_nav {
     display: block; }
 
@@ -70,7 +81,64 @@ nav {
     display: none; }
 
   .logo {
-    left: 123px; } }
+    top: 80px;
+    left: 6.5%; }
+
+  .navigation {
+    left: 19.3%;
+    top: 80px; }
+
+  .control-buttons {
+    display: none;
+    width: 283px;
+    height: 61px;
+    position: absolute;
+    top: 65px;
+    right: 14%;
+    justify-content: space-between; }
+    .control-buttons .language {
+      width: 34px;
+      height: 13px;
+      position: relative;
+      margin-top: 17px; }
+      .control-buttons .language p {
+        display: block;
+        color: #314584;
+        font-family: "Work Sans", sans-serif;
+        font-size: 16px;
+        font-weight: 600; }
+      .control-buttons .language img {
+        display: block;
+        position: absolute;
+        right: 4px;
+        top: 8px; }
+    .control-buttons .contact-us {
+      margin-top: -4px;
+      width: 201px;
+      height: 61px;
+      position: relative; }
+      .control-buttons .contact-us:hover {
+        box-shadow: 0 5px 10px rgba(25, 45, 51, 0.15); }
+      .control-buttons .contact-us p {
+        display: block;
+        position: absolute;
+        top: 20px;
+        left: 34px;
+        font-family: "Work Sans", sans-serif;
+        font-size: 18px;
+        font-weight: 600; }
+      .control-buttons .contact-us img {
+        display: block;
+        position: absolute;
+        bottom: 21px;
+        right: 24px; } }
+@media (min-width: 1248px) {
+  .control-buttons {
+    display: flex; } }
+/* ---//Navigation---*/
+.header-image {
+  display: none; }
+
 .about-us--info {
   margin-left: auto;
   margin-right: auto;
@@ -106,6 +174,35 @@ nav {
       box-shadow: 0 5px 10px rgba(255, 57, 70, 0.15);
       color: white; }
 
+@media (min-width: 768px) {
+  .about-us {
+    width: 553px;
+    height: 356px;
+    margin-top: 155px;
+    margin-left: auto;
+    margin-right: auto; }
+    .about-us .about-us--info {
+      width: 553px; }
+      .about-us .about-us--info .about-us--info-tittle {
+        font-size: 73px;
+        height: 167px;
+        width: 553px;
+        line-height: 95.52px;
+        margin-bottom: 40px;
+        letter-spacing: 0.73px; }
+      .about-us .about-us--info .about-us--info-description {
+        margin-bottom: 20px; } }
+@media (min-width: 1248px) {
+  .about-us {
+    margin-left: 19%; } }
+@media (min-width: 1920px) {
+  .header-image {
+    display: block;
+    position: absolute;
+    top: 235px;
+    right: 6.7%; } }
+/* ---//Header---*/
+/* ---Portfolio---*/
 .portfolio {
   width: 371px;
   margin-left: auto;
@@ -119,14 +216,15 @@ nav {
     font-weight: 600;
     margin-bottom: 30px; }
   .portfolio .portfolio-examples {
-    display: flex;
-    flex-direction: column;
-    height: auto; }
+    display: grid;
+    grid-template-columns: 371px;
+    grid-gap: 15px;
+    height: auto;
+    margin-bottom: 20px; }
     .portfolio .portfolio-examples .portfolio-item {
       max-width: 371px;
       height: 281px;
-      background-color: #c3d0d8;
-      margin-bottom: 30px; }
+      background-color: #c3d0d8; }
   .portfolio button {
     border: none;
     background-color: white;
@@ -147,6 +245,25 @@ nav {
       border-radius: 160px 160px / 200px;
       box-shadow: 0 5px 10px rgba(255, 57, 70, 0.15); }
 
+/* ---//Portfolio---*/
+@media (min-width: 768px) {
+  .portfolio {
+    width: 742px; }
+    .portfolio .portfolio-examples {
+      grid-template-columns: 371px 371px;
+      grid-gap: 15px;
+      margin-bottom: 40px; } }
+@media (min-width: 1248px) {
+  .portfolio {
+    width: 1113px; }
+    .portfolio .portfolio-examples {
+      display: grid;
+      grid-template-columns: 371px 371px 371px;
+      grid-gap: 15px;
+      margin-bottom: 40px; }
+    .portfolio .load-more {
+      margin-bottom: 300px; } }
+/* ---Contact Us---*/
 .contact-us {
   width: 80%;
   margin-left: auto;
@@ -213,5 +330,34 @@ nav {
     color: #314584;
     border: none;
     padding-left: 10px; }
+
+@media (min-width: 1248px) {
+  .contact-us {
+    width: 1174px;
+    height: 473px;
+    margin-top: auto;
+    margin-left: auto; }
+    .contact-us p {
+      font-size: 18px; }
+    .contact-us .contact-us-tittle {
+      font-size: 48px; }
+    .contact-us .contact-form {
+      width: 1174px;
+      height: 340px; }
+      .contact-us .contact-form .contact-info {
+        width: 1174px;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 20px; }
+        .contact-us .contact-form .contact-info #email {
+          width: 571px;
+          height: 61px; }
+        .contact-us .contact-form .contact-info #subject {
+          width: 571px;
+          height: 61px;
+          margin-right: -11px; }
+      .contact-us .contact-form .text {
+        height: 121px; } }
+/* ---//Contact Us---*/
 
 /*# sourceMappingURL=style.css.map */

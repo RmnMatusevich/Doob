@@ -1,3 +1,6 @@
+
+/* ---Header---*/
+/* ---Navigation---*/
 nav {
   width: 100%;
   height: 61px;
@@ -45,19 +48,6 @@ nav {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 .logo {
   position: absolute;
   left: 50%;
@@ -92,10 +82,20 @@ nav {
   }
 }
 
+.control-buttons {
+  display: none;
+}
+
 
 
 
 @media (min-width: 768px) {
+  header {
+    margin-bottom: 190px;
+  }
+  nav {
+    height: 180px;
+  }
   .main_nav {
     display: block;
   }
@@ -103,23 +103,86 @@ nav {
     display: none;
   }
   .logo {
-    left: 123px;
+    top: 80px;
+    left: 6.5%;
+  }
+
+  .navigation {
+    left: 19.3%;
+    top: 80px;
+  }
+
+  .control-buttons {
+    display: none;
+    width: 283px;
+    height: 61px;
+    position: absolute;
+    top: 65px;
+    right: 14%;
+    justify-content: space-between;
+    .language{
+      width: 34px;
+      height: 13px;
+      position: relative;
+      margin-top: 17px;
+      p {
+        display: block;
+        color: #314584;
+        font-family: "Work Sans", sans-serif;
+        font-size: 16px;
+        font-weight: 600;
+      }
+
+      img {
+        display: block;
+        position: absolute;
+        right: 4px;
+        top: 8px;
+      }
+    }
+
+    .contact-us {
+      margin-top: -4px;
+      width: 201px;
+      height: 61px;
+      position: relative;
+      &:hover {
+        box-shadow: 0 5px 10px rgba(25, 45, 51, 0.15);
+      }
+      p {
+        display: block;
+        position: absolute;
+        top: 20px;
+        left: 34px;
+        font-family: "Work Sans", sans-serif;
+        font-size: 18px;
+        font-weight: 600;
+      }
+
+      img {
+        display: block;
+        position: absolute;
+        bottom: 21px;
+        right: 24px;
+      }
+    }
+
   }
 }
 
+@media (min-width: 1248px) {
+  .control-buttons {
+    display: flex;
+  }
+}
+/* ---//Navigation---*/
 
 
 
 
-
-
-
-
-
-
-
-
-
+  .header-image {
+    display: none;
+  }
 
 .about-us--info {
   margin-left: auto;
@@ -162,6 +225,48 @@ nav {
   }
 }
 
+@media (min-width: 768px) {
+
+  .about-us {
+    width: 553px;
+    height: 356px;
+    margin-top: 155px;
+    margin-left: auto;
+    margin-right: auto;
+    .about-us--info {
+      width: 553px;
+      .about-us--info-tittle {
+        font-size: 73px;
+        height: 167px;
+        width: 553px;
+        line-height: 95.52px;
+        margin-bottom: 40px;
+        letter-spacing: 0.73px;
+      }
+      .about-us--info-description {
+        margin-bottom: 20px;
+      }
+    }
+  }
+}
+
+@media (min-width: 1248px) {
+  .about-us {
+    margin-left: 19%;
+
+  }
+}
+
+@media (min-width: 1920px) {
+  .header-image {
+    display: block;
+    position: absolute;
+    top: 235px;
+    right: 6.7%;
+  }
+}
+
+/* ---//Header---*/
 
 
 
@@ -174,8 +279,7 @@ nav {
 
 
 
-
-
+/* ---Portfolio---*/
 .portfolio {
   width: 371px;
   margin-left: auto;
@@ -191,14 +295,15 @@ nav {
     margin-bottom: 30px;
   }
   .portfolio-examples {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 371px;
+    grid-gap: 15px;
     height: auto;
+    margin-bottom: 20px;
     .portfolio-item {
       max-width: 371px;
       height: 281px;
       background-color: #c3d0d8;
-      margin-bottom: 30px;
     }
   }
 
@@ -226,16 +331,42 @@ nav {
 
 }
 
+/* ---//Portfolio---*/
+
+@media (min-width: 768px) {
+  .portfolio {
+    width: 742px;
+
+    .portfolio-examples {
+      grid-template-columns: 371px 371px;
+      grid-gap: 15px;
+      margin-bottom: 40px;
+    }
+  }
+
+}
+
+@media (min-width: 1248px) {
+  .portfolio {
+    width: 1113px;
+
+    .portfolio-examples {
+      display: grid;
+      grid-template-columns: 371px 371px 371px;
+      grid-gap: 15px;
+      margin-bottom: 40px;
+    }
+    .load-more {
+      margin-bottom: 300px;
+    }
+  }
+}
 
 
 
 
 
-
-
-
-
-
+/* ---Contact Us---*/
 .contact-us {
   width: 80%;
   margin-left: auto;
@@ -326,3 +457,42 @@ nav {
     }
   }
 }
+
+@media (min-width:1248px) {
+  .contact-us {
+    width: 1174px;
+    height: 473px;
+    margin-top: auto;
+    margin-left: auto;
+    p {
+      font-size: 18px;
+    }
+    .contact-us-tittle {
+      font-size: 48px;
+    }
+    .contact-form {
+      width: 1174px;
+      height: 340px;
+      .contact-info {
+        width: 1174px;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 20px;
+        #email {
+          width: 571px;
+          height: 61px;
+        }
+        #subject {
+          width: 571px;
+          height: 61px;
+          margin-right: -11px;
+        }
+      }
+      .text {
+        height: 121px;
+      }
+    }
+  }
+}
+
+/* ---//Contact Us---*/
