@@ -2,34 +2,77 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Doob</title>
+    <link href="reset.css" rel="stylesheet">
     <link href="style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans:400,600,700&display=swap" rel="stylesheet">
+
 </head>
 <body>
     <header>
+        <nav>
+            <div class="menu" onclick="f()">
+                <a href="#" class="menu-button">
+                    <span></span>
+                </a>
+            </div>
+            <div class="logo">
+                <img src="images/logo.png" alt="website-logo">
+            </div>
+            <div class="main_nav">
+                <ul class="navigation">
+                <li class="navigation-item"><a href="#" class="navigation-item__link" >Home.</a></li>
+                <li class="navigation-item"><a href="#" class="navigation-item__link">About us.</a></li>
+                <li class="navigation-item"><a href="#" class="navigation-item__link">Portfolio.</a></li>
+                <li class="navigation-item"><a href="#" class="navigation-item__link">Blog.</a></li>
+                <li class="navigation-item"><a href="#" class="navigation-item__link">Contact us.</a></li>
+                </ul>
+            </div>
 
+        </nav>
+        <div class="about-us">
+            <div class="about-us--info">
+                <div class="about-us--info-tittle"><h1>The Spirit of Digital Agency.</h1></div>
+                <div class="about-us--info-description">Vestibulum ac diam sit amet quam vehicula elementum amet est on dui. Nulla porttitor accumsan tincidunt.</div>
+                <button>More About us</button>
+                <button>Get in Touch.</button>
+            </div>
+        </div>
     </header>
 
-
-
-
-
-
-
-
     <main>
+        <section class="portfolio">
+            <h3 class="portfolio-tittle">See some of our Creative work.</h3>
+            <div class="portfolio-examples">
+                <div class="portfolio-item"></div>
+                <div class="portfolio-item"></div>
+                <div class="portfolio-item"></div>
+                <div class="portfolio-item"></div>
+                <div class="portfolio-item"></div>
+                <div class="portfolio-item"></div>
+            </div>
+            <button class="load-more">See More of These.</button>
+        </section>
+        <section class="contact-us">
+            <p>CONTACT US</p>
+            <h3 class="contact-us-tittle">Get in Touch</h3>
 
+            <form class="contact-form">
+                <div class="contact-info">
+                    <input type="email" id="email" placeholder="Email" required>
+                    <input type="text" id="subject" placeholder="Subject" required>
+                </div>
+                <textarea type="text" id="text" placeholder="Message here..." required></textarea>
+                <input type="submit" value="Send Message " id="submit-button">
+            </form>
+
+
+
+
+        </section>
     </main>
-
-
-
-
-
-
-
-
-
-
 
     <footer>
 
