@@ -1,13 +1,23 @@
 
 
+const nav = document.getElementById("menu_nav");
+//let button = document.getElementsByClassName("menu-button");
+//let links = document.getElementsByClassName("menu-item__link");
+//let overplay = document.getElementsByClassName("menu-overplay");
 
-let button = document.getElementsByClassName("menu");
-let nav = document.getElementsByClassName("main_nav");
-button.onclick = () => {
-    nav.style.display = "visible";
-};
 
-function f() {
-    let nav = document.getElementsByClassName("main_nav");
-    nav.style.display = "visible";
+
+const button = document.getElementById("menu-button");
+
+function buttonClick() {
+    button.classList.toggle("menu-button_active");
+    nav.classList.toggle("menu_nav_active");
 }
+
+
+
+
+
+
+
+
