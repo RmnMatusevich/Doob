@@ -356,7 +356,7 @@ header {
       margin-bottom: 300px; } }
 @media (max-width: 371px) {
   .portfolio {
-    width: 70%;
+    width: 256px;
     margin-left: auto;
     margin-right: auto; }
     .portfolio .portfolio-tittle {
