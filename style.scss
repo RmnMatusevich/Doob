@@ -62,20 +62,6 @@ header {
   filter: brightness(0.7);
 }
 
-.menu_active .menu-button_active {
-  background-color: transparent;
-}
-
-.menu_active .menu-button_active::before {
-  top: 0;
-  transform: rotate(45deg);
-}
-
-.menu_active .menu-button_active::after {
-  top: 0;
-  transform: rotate(-45deg);
-}
-
 
 .menu_nav {
   margin-top: -60px;
@@ -109,21 +95,6 @@ header {
 .menu-item__link .menu-button:hover {
   transition: 300ms;
   filter: brightness(0.7);
-}
-
-.menu_overplay {
-  display: none;
-  position: fixed;
-  left: 0;
-  top: 0;
-  width: 100vw;
-  height: 100vh;
-  z-index: 10;
-}
-
-.menu_active .menu_overplay{
-  display: block;
-  background-color: rgba(0, 0, 0, 0.5);
 }
 
 /* ---//Mobile Menu---*/

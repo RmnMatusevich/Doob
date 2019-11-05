@@ -1,14 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f7f97f5c-c6e9-4971-98a6-ba0a784e728d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.sass-cache/6e69c8587311d19dca1c884f92dcc8e9d18a6c4c/style.scssc" beforeDir="false" afterPath="$PROJECT_DIR$/.sass-cache/6e69c8587311d19dca1c884f92dcc8e9d18a6c4c/style.scssc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/style.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/style.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/style.scss" afterDir="false" />
-    </list>
+    <list default="true" id="f7f97f5c-c6e9-4971-98a6-ba0a784e728d" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -195,12 +188,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1572880565369</updated>
-      <workItem from="1572880566767" duration="40029000" />
+      <workItem from="1572880566767" duration="40423000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="40029000" />
+    <option name="totallyTimeSpent" value="40423000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
