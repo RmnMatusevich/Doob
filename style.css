@@ -8,6 +8,7 @@ nav {
 header {
   height: 0px; }
 
+/* ---Mobile Menu---*/
 .menu {
   padding-left: 5%;
   padding-top: 5px;
@@ -103,6 +104,7 @@ header {
   display: block;
   background-color: rgba(0, 0, 0, 0.5); }
 
+/* ---//Mobile Menu---*/
 .logo {
   position: absolute;
   left: 50%;
@@ -378,16 +380,18 @@ header {
       margin-bottom: 300px; } }
 @media (max-width: 371px) {
   .portfolio {
-    width: 80%;
+    width: 70%;
     margin-left: auto;
     margin-right: auto; }
     .portfolio .portfolio-tittle {
-      width: 290px;
+      width: 255px;
       height: 112px; }
-    .portfolio .portfolio-examples .portfolio-item {
-      width: 256px;
-      height: 194px;
-      margin: 0 0; } }
+    .portfolio .portfolio-examples {
+      width: 256px; }
+      .portfolio .portfolio-examples .portfolio-item {
+        width: 256px;
+        height: 194px;
+        margin: 0 0; } }
 /* ---Contact Us---*/
 .contact-us {
   width: 80%;
@@ -483,7 +487,9 @@ header {
           height: 61px;
           margin-right: -11px; }
       .contact-us .contact-form .text {
-        height: 121px; } }
+        height: 121px; }
+      .contact-us .contact-form #text {
+        resize: none; } }
 /* ---//Contact Us---*/
 /* ---Footer---*/
 footer {

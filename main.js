@@ -2,7 +2,7 @@
 
 const nav = document.getElementById("menu_nav");
 //let button = document.getElementsByClassName("menu-button");
-//let links = document.getElementsByClassName("menu-item__link");
+let links = document.getElementsByClassName("menu-item__link");
 //let overplay = document.getElementsByClassName("menu-overplay");
 
 
@@ -14,6 +14,9 @@ function buttonClick() {
     nav.classList.toggle("menu_nav_active");
 }
 
+function linkClick() {
+    nav.classList.toggle("menu_nav_active")
+}
 
 
 
